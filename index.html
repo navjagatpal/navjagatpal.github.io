@@ -1,1 +1,63 @@
-<h1>Hello from Teacher Nav</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navarun Jagatpal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="teachernav.jpg">
+    <h1>Navarun Jagatpal</h1>
+    <p>Educator | Engineer | Artist</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('philosophy')">Philosophy</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <section id="about" class="active">
+    <h2>About Me</h2>
+    <p>I'm an educator, engineer, and artist passionate about integrating science, technology, and creativity. I teach physics and computer science at Westtown School and hold degrees from Columbia and the University of Delaware.</p>
+    <p>My research includes work in photonics and electro-optic modulators. I also create metal and wire sculptures, featured on <a href="https://instagram.com/navjagmetalart" target="_blank">Instagram</a>.</p>
+  </section>
+
+  <section id="philosophy">
+    <h2>Teaching Philosophy</h2>
+    <p>I aim to make science accessible and engaging through inclusive, real-world education that inspires curiosity and application.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Research & Projects</h2>
+    <ul>
+      <li><strong>Photonics Research:</strong> Thin-film lithium niobate modulators for 1064 nm wavelengths — <a href="https://www.researchgate.net/profile/Navarun-Jagatpal" target="_blank">ResearchGate</a></li>
+      <li><strong>The Jewel Box:</strong> Acrylic and fiber optic art installation — <a href="https://sites.udel.edu/art-in-science/project/the-jewel-box/" target="_blank">View Project</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:navarun.jagatpal@westtown.edu">navarun.jagatpal@westtown.edu</a></p>
+    <p>Phone: (302) 743-6366</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/navarun-jagatpal" target="_blank">linkedin.com/in/navarun-jagatpal</a></p>
+    <p>Instagram: <a href="https://instagram.com/navjagmetalart" target="_blank">@navjagmetalart</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Navarun Jagatpal</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
